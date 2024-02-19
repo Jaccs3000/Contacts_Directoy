@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="modelo"
+            type="com.example.contacts.viewModel.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/etBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_rounded_corners"
+            android:hint="@string/string_buscar_personal"
+            android:imeOptions="actionSearch"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:text="@={modelo.parametroBusqueda}"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textAllCaps="true"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/miRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAbrirFormulario"
+            app:shapeAppearanceOverlay="@style/CornerFloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/white"
+            android:contentDescription="@string/adicionar"
+            android:backgroundTint="@color/yellow"/>
+
+
+    </LinearLayout>
+</layout>

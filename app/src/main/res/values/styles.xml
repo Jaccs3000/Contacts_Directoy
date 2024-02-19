@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CornerFloatingActionButton" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">80dp</item>
+    </style>
+    <style name="item_name_list_style">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:fontFamily">@font/sansita</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <style name="item_information_list_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
